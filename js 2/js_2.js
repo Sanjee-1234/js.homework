@@ -8,15 +8,15 @@ if (x == "library" && y == "book123") {
     if (proceed) {
         let z = prompt("Select a category:\n1. Fiction\n2. Science\n3. History");
         switch (z) {
-            case 1:
+            case "1":{
                 alert("You selected Fiction");
-                break;
-            case 2:
+                break;}
+            case "2":{
                 alert("You selected Science");
-                break;
-            case 3:
+                break;}
+            case "3":{
                 alert("You selected History");
-                break;
+                break;}
         }
     }
     else{
