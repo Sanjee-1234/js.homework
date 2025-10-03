@@ -16,7 +16,7 @@ if (x=="1234"){
             balance += amount;
             alert("Your New balance: " + balance);
         } else {
-            alert("Invalid Amount");
+            alert("Invalid amount");
         }
     }     
     else if(select=="3"){
