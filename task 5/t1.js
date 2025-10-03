@@ -8,7 +8,7 @@ if(age>=12 && name==name && email==email ){
     const questions = [
         { q: "What is the capital of France?\n1. Paris\n2. London\n3. Rome", a: "1" },
         { q: "Which planet is known as the Red Planet?\n1. Earth\n2. Mars\n3. Jupiter", a: "2" },
-        { q: "Who wrote 'Hamlet'?\n1. Charles Dickens\n2. William Shakespeare\n3. Mark Twain", a: "2" },
+        { q: "Who Wrote 'Hamlet'?\n1. Charles Dickens\n2. William Shakespeare\n3. Mark Twain", a: "2" },
         { q: "What is the boiling point of water?\n1. 100°C\n2. 90°C\n3. 80°C", a: "1" },
         { q: "Which is the largest ocean?\n1. Atlantic\n2. Indian\n3. Pacific", a: "3" },
         { q: "What is the answer for 5*5?\n1. 4\n2. 25\n3. 36", a: "2" },
