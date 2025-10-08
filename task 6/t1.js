@@ -2,6 +2,7 @@ try{
    let name = prompt("Enter your name:");
     if (!name) {
         alert("Name not Entered....");
+        throw new Error("Name not entered");
     } else {
         let Order = confirm("Hello " + name + "! Do you want to order food?");
         if (!Order) {
@@ -24,11 +25,13 @@ try{
             let selected = menu.find(m => m.number == choice);
             if (!selected) {
                 alert("Invalid choice!");
+                throw new Error("Invalid choice");
             } else {
                 let quantity = prompt("Enter quantity:");
                 quantity = Number(quantity);
                 if (isNaN(quantity) || quantity < 1) {
                     alert("Invalid quantity!");
+                    throw new Error("Invalid quantity");
                 } else {
                     let total = selected.price * quantity;
                     alert("You ordered " + quantity + " " + selected.item + (quantity > 1 ? "s" : "") + ". Total = ₹" + total);
