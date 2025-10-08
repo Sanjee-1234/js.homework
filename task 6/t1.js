@@ -1,8 +1,11 @@
 try{
    let name = prompt("Enter your name:");
-    if (!name) {
+    if (name=="") {
         alert("Name not Entered....");
         throw new Error("Name not entered");
+    }else if(!isNaN(name)){
+        alert("Invalid Name....");
+        throw new Error("Invalid Name");
     } else {
         let Order = confirm("Hello " + name + "! Do you want to order food?");
         if (!Order) {
@@ -29,7 +32,7 @@ try{
             } else {
                 let quantity = prompt("Enter quantity:");
                 quantity = Number(quantity);
-                if (isNaN(quantity) || quantity < 1) {
+                if (isNaN(quantity) || quantity < 1 || quantity > 10000) {
                     alert("Invalid quantity!");
                     throw new Error("Invalid quantity");
                 } else {
